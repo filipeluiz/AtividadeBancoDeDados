@@ -1,0 +1,18 @@
+.header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 100px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: burlywood;
+}
+
+.btn-cliente {
+  margin-top: 40px;
+}
+
+.title {
+  text-align: center;
+  margin: 60px 0;
+}

@@ -1,0 +1,51 @@
+<%- contentFor('body') %>
+        <h1 class="title">Inserção do cliente</h1>
+        <form class="row g-3" method="post" action="/clientes-info">
+          <div class="col-md-6">
+            <label for="CustomerID" class="form-label">Cliente ID</label>
+            <input type="text" class="form-control" name="CustomerID" required>
+          </div>
+          <div class="col-md-6">
+            <label for="CompanyName" class="form-label">Nome Companhia</label>
+            <input type="text" class="form-control" name="CompanyName" required>
+          </div>
+          <div class="col-6">
+            <label for="ContactName" class="form-label">Nome Contato</label>
+            <input type="text" class="form-control" name="ContactName">
+          </div>
+          <div class="col-6">
+            <label for="ContactTitle" class="form-label">Titulo Contato</label>
+            <input type="text" class="form-control" name="ContactTitle">
+          </div>
+          <div class="col-md-6">
+            <label for="Address" class="form-label">Endereço</label>
+            <input type="text" class="form-control" name="Address">
+          </div>
+          <div class="col-md-4">
+            <label for="City" class="form-label">Cidade</label>
+            <input type="text" class="form-control" name="City">
+          </div>
+          <div class="col-md-2">
+            <label for="Region" class="form-label">Região</label>
+            <input type="text" class="form-control" name="Region">
+          </div>
+          <div class="col-6">
+            <label for="PostalCode" class="form-label">CEP</label>
+            <input type="text" class="form-control" name="PostalCode">
+          </div>
+          <div class="col-6">
+            <label for="Country" class="form-label">Pais</label>
+            <input type="text" class="form-control" name="Country">
+          </div>
+          <div class="col-6">
+            <label for="Phone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" name="Phone">
+          </div>
+          <div class="col-6">
+            <label for="Fax" class="form-label">FAX</label>
+            <input type="text" class="form-control" name="Fax">
+          </div>                    
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </form>

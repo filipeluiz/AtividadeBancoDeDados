@@ -1,0 +1,22 @@
+<%- contentFor('body') %>
+      <form action="/clientes-update" method="GET">  
+        <label for="Fax" class="form-label">Deletar: </label> 
+        <div class="input-group">
+          <input type="text" name="nome" class="form-control" placeholder="Nome" aria-label="Text input with dropdown button">    
+          <select class="form-select" name="opcoes">
+            <option selected>Selecionar para remover</option>
+            <option value="CustomerID">ID</option>
+            <option value="CompanyName">Nome companhia</option>
+            <option value="ContactName">Nome contato</option>
+            <option value="ContactTitle">Titulo contato</option>
+            <option value="Address">Endereço</option>
+            <option value="City">Cidade</option>
+            <option value="Region">Região</option>
+            <option value="PostalCode">CEP</option>
+            <option value="Country">Pais</option>
+            <option value="Phone">Telefone</option>
+            <option value="Fax">FAX</option>
+          </select>
+          <button type="submit" class="btn btn-outline-secondary" type="button">Procurar</button>        
+        </div>
+      </form> 

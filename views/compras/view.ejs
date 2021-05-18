@@ -1,0 +1,24 @@
+<%- contentFor('body') %>
+      <h1 class="title">Visualização das Compras</h1>
+      <table class="table table-striped table-hover">
+        <thead class="table-dark"> 
+          <tr>
+            <th scope="col">OrderID</th>
+            <th scope="col">ProductID</th>
+            <th scope="col">UnitPrice</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Discount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (order of orders){%>
+            <tr>
+              <td><%= order.OrderID %></td>
+              <td><%= order.ProductID %></td>
+              <td><%= order.UnitPrice %></td>
+              <td><%= order.Quantity %></td>
+              <td><%= order.Discount %></td>                                                                    
+            </tr>      
+            <% } %>    
+        </tbody>
+      </table>
